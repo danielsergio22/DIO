@@ -18,7 +18,7 @@ Saída
 Para cada caso de teste, imprima uma única linha contendo a mensagem enviada pelo padre do balão.
  */
 
-public class padreBalao {
+public class PadreBalao {
  //complete os espaços em branco com uma solução possível
 	public static void main(String[] args) throws IOException {
 		try (Scanner leitor = new Scanner(System.in)) {

@@ -16,25 +16,25 @@ Para cada caso de teste imprima uma linha contendo a frase “Top N”, e substi
 public class TopN {
 
     public static void main(String[] args) {
-        try (Scanner scan = new Scanner(System.in)) {
-            int[] TOPS = {1, 3, 5, 10, 25, 50, 100};
-     int K = scan.nextInt();
-     if (K == 1){
-            K = 0;
-     } else if (K <= 3 && K > 1){
-            K = 1;
-     } else if (K <= 5 && K > 3){
-            K = 2;
-     } else if (K <= 10 && K > 5){
-            K = 3;
-     } else if (K <= 25 && K > 10){
-            K = 4;
-     } else if (K <= 50 && K > 25){
-            K = 5;
-     } else if (K <= 100 && K > 50){
-            K = 6;
-     }
-      System.out.println("Top " + TOPS[K]);
-        }
+       try (Scanner scan = new Scanner(System.in)) {
+              int[] TOPS = {1, 3, 5, 10, 25, 50, 100};
+              int K = scan.nextInt();
+              if (K == 1){
+                     K = 0;
+              } else if (K <= 3 && K > 1){
+                     K = 1;
+              } else if (K <= 5 && K > 3){
+                     K = 2;
+              } else if (K <= 10 && K > 5){
+                     K = 3;
+              } else if (K <= 25 && K > 10){
+                     K = 4;
+              } else if (K <= 50 && K > 25){
+                     K = 5;
+              } else if (K <= 100 && K > 50){
+                     K = 6;
+              }
+              System.out.println("Top " + TOPS[K]);
+       }
     }
 }

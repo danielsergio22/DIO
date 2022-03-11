@@ -38,5 +38,6 @@ public class Experiencias {
 			System.out.printf("Percentual de coelhos: %.2f %%\n", perc_coelho);
 			System.out.printf("Percentual de ratos: %.2f %%\n", perc_rato);
 			System.out.printf("Percentual de sapos: %.2f %%\n", perc_sapo);
-    }
+			sc.close();
+	}
 }

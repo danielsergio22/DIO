@@ -1,7 +1,7 @@
-
+package DIO.LabBancoDigital;
 
 import java.util.Scanner;
-public class Main {
+public class Testador {
 
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {

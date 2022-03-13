@@ -1,4 +1,4 @@
-package DIO.Desafios;
+package DIO;
 import java.util.Scanner;
 
 public class Experiencias {

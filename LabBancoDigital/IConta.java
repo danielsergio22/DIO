@@ -1,4 +1,4 @@
-
+package DIO.LabBancoDigital;
 
 public interface IConta {
 	

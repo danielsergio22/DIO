@@ -1,4 +1,4 @@
-package DIO.Desafios;
+package DIO;
 
 import java.io.BufferedReader;
 import java.io.IOException;

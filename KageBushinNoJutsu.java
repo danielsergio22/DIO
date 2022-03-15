@@ -7,9 +7,10 @@ public class KageBushinNoJutsu {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = 0, vezes = 0;
-		n = sc.nextInt();
-		jutsu(n,vezes);
-		
+		while(sc.hasNext()){
+            n = sc.nextInt();
+            jutsu(n,vezes);
+        }
 		sc.close();
 	}
 	public static void jutsu(int n, int vezes){

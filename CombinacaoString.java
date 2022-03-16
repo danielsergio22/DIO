@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CombinacaoString {
 
 	public static void main(String[] args) {
-		Scanner leitor = new Scanner(System.in);
-		int N = leitor.nextInt();
-        leitor.nextLine();
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();
+        scan.nextLine();
         
 		for (int i = 0; i < N; i++) {
             int maiorStrg;
             String resultado = "" ;
 
-			String[] strgs = leitor.nextLine().split(" ");
+			String[] strgs = scan.nextLine().split(" ");
             char[] chars1 = strgs[0].toCharArray();
             char[] chars2 = strgs[1].toCharArray();
 
@@ -33,5 +33,6 @@ public class CombinacaoString {
             }
 			System.out.println(resultado);
 		}
+        scan.close();
 	}
 }

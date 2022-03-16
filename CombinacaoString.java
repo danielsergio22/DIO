@@ -14,25 +14,23 @@ public class CombinacaoString {
             String resultado = "" ;
 
 			String[] strgs = scan.nextLine().split(" ");
-            char[] chars1 = strgs[0].toCharArray();
-            char[] chars2 = strgs[1].toCharArray();
 
-            if (chars1.length < chars2.length){
-                maiorStrg = chars2.length;
+            if (strgs[0].length() < strgs[1].length()){
+                maiorStrg = strgs[1].length();
             }else {
-                maiorStrg = chars1.length;
+                maiorStrg = strgs[0].length();
             }
 
 			for (  int j=0; j < maiorStrg; j++) {
-                if (chars1.length-1 >= j){
-                    resultado += chars1[j];
+                if (strgs[0].length()-1 >= j){
+                    resultado += strgs[0].charAt(j);
                 }
-                if (chars2.length-1 >= j){
-                    resultado += chars2[j];
+                if (strgs[1].length()-1 >= j){
+                    resultado += strgs[1].charAt(j);
                 }
             }
 			System.out.println(resultado);
-		}
+        }
         scan.close();
 	}
 }

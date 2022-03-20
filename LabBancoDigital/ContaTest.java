@@ -3,7 +3,20 @@ package DIO.LabBancoDigital;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+//@TestMethodOrder
+
 public class ContaTest {
+
+    //@before
+    //@after
+    //@beforeAll
+    //@afterAll
+    //@beforeEach
+    //@afterEach
+    //@EnabledIf
+    //@EnabledIfEnvironmentVariable
+
+
     @Test
     void testNumeroDaConta() {
         Cliente cliente1 = new Cliente();

@@ -19,7 +19,12 @@ public class TabuleiroSecreto {
         q = scan.nextInt();
 
         int[][] tab = new int[n][n];
-        
+        for (int i = 0; i < n ; i++) {
+            for (int j = 0; j < n; j++) {
+                matriz[i][j] = 0;
+            }
+        }
+     
         for(int i=0; i<q; i++){
             op = scan.nextInt();
             switch(op){

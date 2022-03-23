@@ -1,23 +1,29 @@
-package DIO;
+package tabuleirosecreto;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
+import java.util.List;
  
 public class TabuleiroSecreto {
     public static void main(String[] args) throws IOException {
+        List<Integer> arrayOrdenado = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
-        int n, q, op, x, r;
+        int n, q, op, x, r,maiorNumRep =0 ,valorRepetido = 0;
+        
         n = scan.nextInt();
         q = scan.nextInt();
 
         int[][] tab = new int[n][n];
+        
         for(int i=0; i<q; i++){
             op = scan.nextInt();
             switch(op){
+                
                 case 1:
                     x = scan.nextInt();
                     r = scan.nextInt();
@@ -33,12 +39,42 @@ public class TabuleiroSecreto {
                     }
                 break;
                 case 3:
+                    maiorNumRep = 0;
+                    valorRepetido = 0;
                     x = scan.nextInt();
-
+                    for(int a=0;a<n;a++){
+                        arrayOrdenado.add(tab[x-1][a]);
+                    }
+                    for(int b=0;b<n;b++){
+                        int numRep = Collections.frequency(arrayOrdenado,tab[x-1][b]);
+                        if(numRep >= maiorNumRep) {
+                            maiorNumRep = numRep;
+                            if(valorRepetido <= tab[x-1][b]){
+                              valorRepetido = tab[x-1][b];  
+                            }
+                        }                        
+                    }
+                    arrayOrdenado.clear();
+                    System.out.println(valorRepetido);
                 break;
                 case 4:
+                    maiorNumRep = 0;
+                    valorRepetido = 0;
                     x = scan.nextInt();
-
+                    for(int a=0;a<n;a++){
+                        arrayOrdenado.add(tab[a][x-1]);
+                    }
+                    for(int b=0;b<n;b++){
+                        int numRep = Collections.frequency(arrayOrdenado,tab[b][x-1]);
+                        if(numRep >= maiorNumRep) {
+                            maiorNumRep = numRep;
+                            if(valorRepetido <= tab[b][x-1]){
+                              valorRepetido = tab[b][x-1];  
+                            }
+                        }                        
+                    }
+                    arrayOrdenado.clear();
+                    System.out.println(valorRepetido);
                 break;
             }
         }

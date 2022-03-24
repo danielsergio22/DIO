@@ -15,7 +15,7 @@ public class ContaTest {
     //@afterEach
     //@EnabledIf
     //@EnabledIfEnvironmentVariable
-
+    //@rule
 
     @Test
     void testNumeroDaConta() {

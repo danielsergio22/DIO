@@ -1,4 +1,4 @@
-package tabuleirosecreto;
+package DIO;
 
 
 import java.io.BufferedReader;
@@ -21,7 +21,7 @@ public class TabuleiroSecreto {
         int[][] tab = new int[n][n];
         for (int i = 0; i < n ; i++) {
             for (int j = 0; j < n; j++) {
-                matriz[i][j] = 0;
+                tab[i][j] = 0;
             }
         }
      

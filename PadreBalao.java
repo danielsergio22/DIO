@@ -21,18 +21,17 @@ Para cada caso de teste, imprima uma única linha contendo a mensagem enviada pe
 public class PadreBalao {
  //complete os espaços em branco com uma solução possível
 	public static void main(String[] args) throws IOException {
-		try (Scanner leitor = new Scanner(System.in)) {
-			while (leitor.hasNext()) {
-				String alphabet = leitor.next();
-				String word = "";
-				int letters = leitor.nextInt();
-				for (int i=0; i<letters; i++) {
-					int letter = leitor.nextInt()-1;
-				  word += alphabet.charAt(letter);
-				}
-				System.out.println(word);
+		Scanner leitor = new Scanner(System.in);
+		while (leitor.hasNext()) {
+			String alphabet = leitor.next();
+			String word = "";
+			int letters = leitor.nextInt();
+			for (int i=0; i<letters; i++) {
+				int letter = leitor.nextInt()-1;
+				word += alphabet.charAt(letter);
 			}
+			System.out.println(word);
 		}
+		leitor.close();
 	}
-	
 }

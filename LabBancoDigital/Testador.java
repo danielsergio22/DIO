@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Testador {
 
     public static void main(String[] args) {
-        try (Scanner scan = new Scanner(System.in)) {
+        Scanner scan = new Scanner(System.in);
             System.out.println("Ola! bem vindo a nubank!\n\n Deseja Criar uma conta? S/N");
             String start = scan.nextLine();
 
@@ -87,6 +87,6 @@ public class Testador {
                 System.out.println("quer fazer outra conta? S/N");
                 start = scan.nextLine();
             }
-        }
+            scan.close();
     }
 }

@@ -1,4 +1,4 @@
-package DIO.LabBancoDigital;
+package DIO.Java.LabBancoDigital;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package DIO;
+package DIO.Java;
 import java.util.Scanner;
 
 public class Experiencias {

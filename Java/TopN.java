@@ -1,4 +1,4 @@
-package DIO;
+package DIO.Java;
 import java.util.Scanner;
 /**
  * Recentemente aconteceu a fase regional da Maratona de Programação da SBC, onde mais de 600 times participaram em mais de 40 sedes diferentes pelo Brasil. Seu amigo participou da competição, e quando questionado sobre sua colocação lhe disse: “Ficamos no top 10”.

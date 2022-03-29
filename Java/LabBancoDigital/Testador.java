@@ -1,4 +1,4 @@
-package DIO.LabBancoDigital;
+package DIO.Java.LabBancoDigital;
 
 import java.util.Scanner;
 public class Testador {

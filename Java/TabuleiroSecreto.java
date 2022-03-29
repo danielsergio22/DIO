@@ -1,4 +1,4 @@
-package DIO;
+package DIO.Java;
 
 import java.io.IOException;
 import java.util.ArrayList;

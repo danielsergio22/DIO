@@ -1,4 +1,4 @@
-package DIO.LabBancoDigital;
+package DIO.Java.LabBancoDigital;
 
 public class Cliente {
 

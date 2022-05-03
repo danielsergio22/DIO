@@ -1,9 +1,12 @@
-var objetoTeste = {
-    atributo1: 2, 
-    atributo2: "as",
+const funcao = (arr,num) =>{
+    try{
+        
+        if(typeof(arr) != Object || typeof(num) != Number) {
+            console.log(TypeError);
+        }
+    } catch(e){
+    } finally{
+        console.log(`sua array e numero é: ${arr} ${num}`);
+    }
 }
-
-variavel1 = 2
-funcao1 = [objetoTeste, 1, true]
-var objetoteste2 = {variavel1, funcao1};
-console.log(objetoteste2)
+funcao("",8);
